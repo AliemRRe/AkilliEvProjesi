@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+:root {
+    --color-primary: #1e5afa;
+    --color-primary-variant: rgba(0, 0, 240,.6);
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-black: #111;
+    --color-dark: #575757;
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container-3 .signup-container .signup-icon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.signup-container {
+    width: 40vh;
+    height: 50vh;
+    position: relative;
+}
+
+.signup-container  h2{
+  padding: 0px 90px;
+}
+.signup-container .signup-name{
+    padding: 13px;
+}
+
+.container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(30, 90, 250 ,.9);
+    position: fixed;
+    left: 100%; 
+    transition: .5s;
+    z-index: 999;
+}
+
+.container-3.active{
+    left: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-variant);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.signup-container  .signup-name input{
+    height: 30px;
+    width: 30vh;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    
+}
+.signup-container .signup-mail{
+    padding: 13px;
+}
+
+.signup-container  .signup-mail input{
+    height: 30px;
+    width: 30vh;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    
+}
+.signup-container  .signup-password{
+    padding: 13px;
+}
+
+.signup-container  .signup-password input{
+    height: 30px;
+    width: 30vh;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+}
+.signup-container  .signup-password input::placeholder,.signup-container  .signup-name input::placeholder,.signup-container  .signup-mail input::placeholder{
+    color: rgba(153, 153, 153,.9)
+}
+.signup-container  .signup-phone input{
+    height: 30px;
+    width: 30vh;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    
+}
+.signup-container  .signup-phone{
+    padding: 13px;
+}
+
+.signup-container .signup-button button {
+   height: 40px;
+   width: 100px;
+   background-color: #111;
+   color: #fff;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: all 400ms;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+
+}
+.signup-container  .signup-button button:hover{
+    background-color: white;
+    color: #1e5afa;
+}
